@@ -14,7 +14,7 @@ export default function Resume() {
       try {
         setLoading(true);
 
-        const res = await axios.get(`http://localhost:3000/media/resume/${id}`);
+        const res = await axios.get(`https://resume-maker-backened.vercel.app/media/resume/${id}`);
 
         setData(res.data.data);
       } catch (error) {

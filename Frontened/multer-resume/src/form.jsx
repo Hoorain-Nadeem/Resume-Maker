@@ -54,7 +54,7 @@ export default function Form() {
     data.append("About", files.About);
 
     axios
-      .post("http://localhost:3000/media/upload", data)
+      .post("https://resume-maker-backened.vercel.app/media/upload", data)
       .then((res) => {
            Swal.fire({
           title: "Resume Created!",
